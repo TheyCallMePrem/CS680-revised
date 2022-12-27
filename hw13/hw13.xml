@@ -17,7 +17,7 @@
 		<mkdir dir="${ivy.lib}"/>
 		
 	</target>
-	<echo message="CLASSPATH: ${toString:classpath}" />
+	<!-- <echo message="CLASSPATH: ${toString:classpath}" /> -->
 	<target name="resolve" depends="init"
 			description="--> Download JAR files (listed in ivy.xml) to the 'lib' directory.">
 		<ivy:retrieve/>
